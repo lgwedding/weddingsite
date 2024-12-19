@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Great_Vibes } from "next/font/google";
 import "./globals.css";
 
-import styles from "./page.module.css"
-import Footer from './_components/common/footer/Footer'
+import styles from "./page.module.css";
+import Footer from "./_components/common/footer/Footer";
 import Header from "./_components/common/header/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const greatVibes = Great_Vibes({
+  weight: "400",
+  variable: "--font-great-vibes",
   subsets: ["latin"],
 });
 
@@ -27,11 +28,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{width: '100%', height: '100vh'}}>      
-      <body className={`${geistSans.variable} ${geistMono.variable} ${styles.body}`}>
-        <Header/>
+    <html lang="en" style={{ width: "100%", height: "100vh" }}>
+      <body
+        className={`${greatVibes.variable} ${geistMono.variable} ${styles.body}`}
+      >
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

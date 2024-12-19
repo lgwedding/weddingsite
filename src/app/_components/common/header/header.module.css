@@ -1,15 +1,17 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.navbar{
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-great-vibes);
+  font-size: x-large;
 }
