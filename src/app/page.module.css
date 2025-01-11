@@ -56,13 +56,15 @@
   border: none;
   border-radius: 2rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
   height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .questionnaire_section {
   padding: 4rem 2rem;
   /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+  width: 100%;
   min-height: 400px;
   display: flex;
   justify-content: center;
@@ -70,7 +72,8 @@
 }
 
 .questionnaire_container {
-  max-width: 800px;
+  max-width: 1200px;
+  width: 100%;
   text-align: center;
   padding: 2rem;
   background: white;
@@ -87,7 +90,7 @@
 
 .section_description {
   font-size: 1.1rem;
-  color: #666;
+  color: #929292;
   line-height: 1.6;
   margin-bottom: 2rem;
   max-width: 600px;
@@ -139,5 +142,92 @@
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
+  }
+}
+.gallery_section {
+  width: 100%;
+  padding: 4rem 2rem;
+  /* background-color: var(--background-color); */
+}
+
+.gallery_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery_preview {
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.preview_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.gallery_button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.gallery_button:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .gallery_section {
+    padding: 2rem 1rem;
+  }
+
+  .gallery_overlay {
+    padding: 1rem;
+  }
+
+  .gallery_button {
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview_image {
+    height: 250px;
+  }
+
+  .gallery_overlay p {
+    font-size: 0.9rem;
+  }
+
+  .gallery_button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }

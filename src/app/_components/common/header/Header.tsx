@@ -12,7 +12,7 @@ const Header = () => {
           <Image src={logo} alt="Home page" width={70} />
         </Link>
         <Link href={`#questionnaire`}>{"Kérdőív"}</Link>
-        <Link href={`/images`}>{"Képek"}</Link>
+        <Link href={`#gallery`}>{"Galéria"}</Link>
         <Link href={`#location`}>{"Helyszín"}</Link>
       </nav>
     </header>

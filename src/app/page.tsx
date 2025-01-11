@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import banner from "../../public/landing_banner.jpg";
 import logo from "../../public/logo.svg";
+import gallery_preview from "../../public/gallery_preview.webp";
 
 export default function Home() {
   return (
@@ -31,16 +32,31 @@ export default function Home() {
           </a>
         </div>
       </section>
-      {/* <div className={styles.mapswrapper} id="location">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfUC0aLUovqn8S9e4U1BW2TvsyDb6ZDQM5CvHSCLw0TBF73Kg/viewform?embedded=true"
-          width="640"
-          height="1644"
-        >
-          Betöltés…
-        </iframe>
-      </div> */}
+      <section id="gallery" className={styles.gallery_section}>
+        <div className={styles.gallery_container}>
+          <h2 className={styles.section_title}>Galéria</h2>
+          <div className={styles.gallery_preview}>
+            <Image
+              src={gallery_preview}
+              alt="Gallery preview"
+              className={styles.preview_image}
+              width={800}
+              height={400}
+              priority
+            />
+            <div className={styles.gallery_overlay}>
+              <p className={styles.section_description}>
+                Tekintsd meg közös pillanatainkat és emlékeinket
+              </p>
+              <Link href="/gallery" className={styles.gallery_button}>
+                Galéria megtekintése
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className={styles.mapswrapper} id="location">
+        <h2 className={styles.section_title}>Helyszín</h2>
         <iframe
           loading="lazy"
           className={styles.map}
