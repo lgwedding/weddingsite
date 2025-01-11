@@ -20,6 +20,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 .banner_image {
   background-image: url("../../public/landing_banner.jpg");
@@ -214,6 +215,20 @@
 
   .gallery_button {
     padding: 0.8rem 1.6rem;
+  }
+  .intro_section {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .banner_image {
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+  }
+  .welcome {
+    width: 100%;
+    height: 92vh;
+    text-align: center;
   }
 }
 

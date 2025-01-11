@@ -15,3 +15,9 @@
   font-family: var(--font-great-vibes);
   font-size: x-large;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 98%;
+  }
+}
