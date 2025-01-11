@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import banner from "../../public/landing_banner.jpg";
 import logo from "../../public/logo.svg";
 import gallery_preview from "../../public/gallery_preview.webp";
 
