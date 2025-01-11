@@ -14,7 +14,33 @@ export default function Home() {
           <h1>Köszöntünk esküvőnk weboldalán!</h1>
         </div>
       </div>
-      <div className={styles.mapswrapper}>
+      <section id="questionnaire" className={styles.questionnaire_section}>
+        <div className={styles.questionnaire_container}>
+          <h2 className={styles.section_title}>Kérdőív</h2>
+          <p className={styles.section_description}>
+            Szeretnénk, ha részesei lennétek ennek a különleges napnak. Kérjük,
+            töltsétek ki kérdőívünket, hogy minden tökéletes legyen!
+          </p>
+          <a
+            href="https://forms.gle/FLMQjhdFXxcngAer6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.questionnaire_button}
+          >
+            Kérdőív kitöltése
+          </a>
+        </div>
+      </section>
+      {/* <div className={styles.mapswrapper} id="location">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfUC0aLUovqn8S9e4U1BW2TvsyDb6ZDQM5CvHSCLw0TBF73Kg/viewform?embedded=true"
+          width="640"
+          height="1644"
+        >
+          Betöltés…
+        </iframe>
+      </div> */}
+      <div className={styles.mapswrapper} id="location">
         <iframe
           loading="lazy"
           className={styles.map}
