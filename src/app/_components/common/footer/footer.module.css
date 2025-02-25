@@ -15,7 +15,7 @@
 
 .footer_content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 4rem;
 }
@@ -176,6 +176,7 @@
 @media (max-width: 480px) {
   .footer_container {
     padding: 0 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .legal_links {

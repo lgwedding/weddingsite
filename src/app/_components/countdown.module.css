@@ -1,0 +1,37 @@
+.countdown_wrapper {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: rgba(184, 115, 167, 0.1);
+  text-align: center;
+}
+
+.countdown_wrapper h2 {
+  font-family: var(--font-great-vibes);
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.countdown_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgba(184, 115, 167, 0.9);
+}
+
+.label {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}

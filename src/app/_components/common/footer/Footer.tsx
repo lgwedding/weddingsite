@@ -69,7 +69,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links 
           <div className={styles.footer_social}>
             <h3>Közösségi média</h3>
             <div className={styles.social_links}>
@@ -90,7 +90,7 @@ const Footer = () => {
                 Instagram
               </a>
             </div>
-          </div>
+          </div>*/}
         </div>
 
         {/* Bottom Footer */}

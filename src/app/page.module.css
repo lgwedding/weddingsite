@@ -19,28 +19,37 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 .banner_image {
-  background-image: url("../../public/landing_banner.jpg");
+  position: absolute;
+  width: 100%;
   height: 100%;
-  width: 60%;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
+  filter: brightness(0.8);
 }
 
 .welcome {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 100%;
-  background-color: rgba(184, 115, 167, 0.4);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome h1 {
   font-family: var(--font-great-vibes);
-  font-size: larger;
-  font-weight: 100;
+  font-size: 3.5rem;
+  color: #333;
+  margin-top: 2rem;
 }
 
 .mapswrapper {
@@ -56,15 +65,15 @@
 .map {
   border: none;
   border-radius: 2rem;
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
   height: 400px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .questionnaire_section {
-  padding: 4rem 2rem;
-  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+  padding: 6rem 2rem;
+  background: white;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -83,39 +92,38 @@
 }
 
 .section_title {
-  font-size: 2.5rem;
+  font-family: var(--font-great-vibes);
+  font-size: 3rem;
   color: #333;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .section_description {
-  font-size: 1.1rem;
-  color: #929292;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
 }
 
 .questionnaire_button {
   display: inline-block;
-  padding: 1rem 2rem;
-  background: #007bff;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
   color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 500;
+  background: rgba(184, 115, 167, 0.9);
+  border: 2px solid rgba(184, 115, 167, 0.9);
+  border-radius: 50px;
   transition: all 0.3s ease;
-  border: 2px solid #007bff;
+  text-decoration: none;
 }
 
 .questionnaire_button:hover {
   background: transparent;
-  color: #007bff;
+  color: rgba(184, 115, 167, 0.9);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
 }
 
 /* Responsive Design */
@@ -146,9 +154,9 @@
   }
 }
 .gallery_section {
+  padding: 6rem 2rem;
+  background: white;
   width: 100%;
-  padding: 4rem 2rem;
-  /* background-color: var(--background-color); */
 }
 
 .gallery_container {
@@ -189,18 +197,19 @@
 
 .gallery_button {
   display: inline-block;
-  padding: 1rem 2rem;
-  margin-top: 1.5rem;
-  background-color: var(--primary-color);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
   color: white;
+  background: rgba(184, 115, 167, 0.9);
+  border: 2px solid rgba(184, 115, 167, 0.9);
+  border-radius: 50px;
+  transition: all 0.3s ease;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
 .gallery_button:hover {
-  background-color: var(--primary-color-dark);
+  background: transparent;
+  color: rgba(184, 115, 167, 0.9);
   transform: translateY(-2px);
 }
 
@@ -244,5 +253,45 @@
   .gallery_button {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
+  }
+}
+
+.program_section {
+  padding: 6rem 2rem;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program_container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.program_image {
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .program_section {
+    padding: 2rem 1rem;
+  }
+
+  .program_container {
+    padding: 1.5rem;
+  }
+
+  .program_image {
+    width: 100%;
+    height: auto;
   }
 }
