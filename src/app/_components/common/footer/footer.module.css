@@ -181,6 +181,10 @@
 }
 
 @media (max-width: 480px) {
+  .footer {
+    background-image: none;
+  }
+
   .footer_container {
     padding: 0 1rem;
     padding-bottom: 0.5rem;
