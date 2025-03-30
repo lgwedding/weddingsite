@@ -5,6 +5,7 @@
   margin-top: 4rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  z-index: 50;
 }
 
 .footer_container {
@@ -138,6 +139,12 @@
 @media (max-width: 768px) {
   .footer {
     padding: 3rem 0 1.5rem;
+
+    background-image: url("/images/Flower 12psd.png"),
+      url("/images/Flower blue.png");
+    background-position: 5% 80%, 95% 80%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px, 100px;
   }
 
   .footer_content {
