@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
+  position: relative;
   color: black;
   height: 100%;
   width: 100%;
@@ -17,10 +18,11 @@
 }
 .intro_section {
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   position: relative;
   overflow: hidden;
+  background-color: white;
 }
 .banner_image {
   position: absolute;
@@ -40,9 +42,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(255, 255, 255, 0.85); */
   padding: 2rem;
   text-align: center;
+  z-index: 0;
 }
 
 .welcome h1 {
@@ -60,6 +63,7 @@
   justify-content: center;
   position: relative;
   margin-top: auto;
+  z-index: 0;
 }
 
 .map {
@@ -79,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .questionnaire_container {
@@ -157,6 +162,7 @@
   padding: 6rem 2rem;
   background: white;
   width: 100%;
+  z-index: 0;
 }
 
 .gallery_container {
@@ -293,5 +299,35 @@
   .program_image {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro_section {
+    background-image: url("/images/Flower 18psd.png"),
+      url("/images/Flower 12psd.png"), url("/images/Flower blue.png"),
+      url("/images/Flower 9.png");
+    background-position: 0% 0%, 0% 100%, 99% 100%, 99% 0%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 400px, 200px, 200px, 400px;
+  }
+}
+@media (min-width: 1600px) {
+  .body {
+    background-image: url("/images/Flower 12psd.png"),
+      url("/images/Flower blue.png");
+    background-position: 0% 100%, 99% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 200px;
+  }
+  .intro_section {
+    background-image: url("/images/Flower 18psd.png"),
+      url("/images/Flower 12psd.png"), url("/images/Flower 5.png"),
+      url("/images/Flower 4.png"), url("/images/Flower blue.png"),
+      url("/images/Flower 9.png");
+    background-position: 0% 0%, 0% 100%, 15% 100%, 75% 100%, 99% 100%, 99% 0%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-size: 400px, 200px, 200px, 200px, 200px, 400px;
   }
 }
