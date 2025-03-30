@@ -12,7 +12,7 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2025-08-30T15:00:00+01:00"); // Hungarian time (UTC+1)
+    const weddingDate = new Date("2025-08-30T15:00:00+02:00"); // Hungarian time (UTC+1)
 
     const calculateTimeLeft = () => {
       const now = new Date();
