@@ -140,11 +140,11 @@
   .footer {
     padding: 3rem 0 1.5rem;
 
-    background-image: url("/images/Flower 12psd.png"),
-      url("/images/Flower blue.png");
+    background-image: url("/images/Flower 2.png"),
+      url("/images/Flower 16psd.png");
     background-position: 5% 80%, 95% 80%;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100px, 100px;
+    background-size: 110px, 100px;
   }
 
   .footer_content {
