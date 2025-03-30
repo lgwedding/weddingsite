@@ -307,25 +307,26 @@
     background-image: url("/images/Flower 18psd.png"),
       url("/images/Flower 12psd.png"), url("/images/Flower blue.png"),
       url("/images/Flower 9.png");
-    background-position: 0% 0%, 0% 100%, 99% 100%, 99% 0%;
+    background-position: 0.5% 0%, 0.5% 100%, 99% 100%, 99% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 400px, 200px, 200px, 400px;
   }
 }
 @media (min-width: 1600px) {
   .body {
-    background-image: url("/images/Flower 12psd.png"),
-      url("/images/Flower blue.png");
+    background-image: url("/images/Flower 15psd.png"),
+      url("/images/Flower 8.png");
     background-position: 0% 100%, 99% 100%;
     background-repeat: no-repeat, no-repeat;
-    background-size: 200px, 200px;
+    background-size: 300px, 230px;
   }
   .intro_section {
     background-image: url("/images/Flower 18psd.png"),
       url("/images/Flower 12psd.png"), url("/images/Flower 5.png"),
       url("/images/Flower 4.png"), url("/images/Flower blue.png"),
       url("/images/Flower 9.png");
-    background-position: 0% 0%, 0% 100%, 15% 100%, 75% 100%, 99% 100%, 99% 0%;
+    background-position: 0.5% 0%, 0.5% 100%, 15% 100%, 75% 100%, 99% 100%,
+      99% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
       no-repeat;
     background-size: 400px, 200px, 200px, 200px, 200px, 400px;
