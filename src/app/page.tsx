@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import logo from "../../public/logo.svg";
-import gallery_preview from "../../public/gallery_preview.webp";
+import gallery_preview from "../../public/gallery_preview (1).jpg";
 import CountdownTimer from "./_components/CountdownTimer";
 export default function Home() {
   return (
@@ -35,13 +35,76 @@ export default function Home() {
       <section id="program" className={styles.program_section}>
         <div className={styles.program_container}>
           <h2 className={styles.section_title}>Program</h2>
-          <Image
-            src="/program.png"
-            alt="Program schedule"
-            width={250}
-            height={500}
-            className={styles.program_image}
-          />
+          <div className={styles.program_inner_container}>
+            <div className={styles.program}>
+              <Image
+                src="/church.jpg"
+                alt="curch icon"
+                className={styles.church_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/rings.jpg"
+                alt="curch icon"
+                className={styles.rings_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/cake.jpg"
+                alt="curch icon"
+                className={styles.cake_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/plate.jpg"
+                alt="curch icon"
+                className={styles.plate_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/footsteps.png"
+                alt="Program schedule"
+                width={250}
+                height={500}
+                className={styles.footsteps_image}
+              />
+              <Image
+                src="/glasses.jpg"
+                alt="curch icon"
+                className={styles.glasses_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/camera.jpg"
+                alt="curch icon"
+                className={styles.camera_image}
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/spoonandfork.jpg"
+                alt="curch icon"
+                className={styles.spoonandfork_image}
+                width={100}
+                height={100}
+              />
+            </div>
+            {/* 
+            <div className={styles.program_card}>
+              <p className={styles.program_text}>15:00: Templomi szertartás</p>
+              <p className={styles.program_text}>16:00: Vendégfogadás</p>
+              <p className={styles.program_text}>17:30: Polgári ceremónia</p>
+              <p className={styles.program_text}>18:00: Fotózás</p>
+              <p className={styles.program_text}>19:30: Ünnepi vacsora</p>
+              <p className={styles.program_text}>22:00: Esküvői torta</p>
+              <p className={styles.program_text}>00:00: Éjféli falatozás</p>
+            </div> */}
+          </div>
         </div>
       </section>
       <section id="gallery" className={styles.gallery_section}>
@@ -60,7 +123,11 @@ export default function Home() {
               <p className={styles.section_description}>
                 Tekintsd meg közös pillanatainkat és emlékeinket
               </p>
-              <Link href="/gallery" className={styles.gallery_button}>
+              <Link
+                href="https://sonder83.pixieset.com/lizaandgergo/"
+                target="_blank"
+                className={styles.gallery_button}
+              >
                 Galéria megtekintése
               </Link>
             </div>
