@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import logo from "../../public/logo.svg";
-import gallery_preview from "../../public/gallery_preview.webp";
+import gallery_preview from "../../public/gallery_preview (1).jpg";
 import CountdownTimer from "./_components/CountdownTimer";
 export default function Home() {
   return (
@@ -35,13 +35,104 @@ export default function Home() {
       <section id="program" className={styles.program_section}>
         <div className={styles.program_container}>
           <h2 className={styles.section_title}>Program</h2>
-          <Image
-            src="/program.png"
-            alt="Program schedule"
-            width={250}
-            height={500}
-            className={styles.program_image}
-          />
+          <div className={styles.program_inner_container}>
+            <div className={styles.program}>
+              <div className={styles.program_icon_church}>
+                <Image
+                  src="/church.jpg"
+                  alt="curch icon"
+                  className={styles.church_image}
+                  width={100}
+                  height={100}
+                />
+                <p>15:00</p>
+                <p>Templomi szertartás</p>
+              </div>
+              <div className={styles.program_icon_rings}>
+                <Image
+                  src="/rings.jpg"
+                  alt="curch icon"
+                  className={styles.rings_image}
+                  width={100}
+                  height={100}
+                />
+                <p>17:30</p>
+                <p>Polgári ceremónia</p>
+              </div>
+              <div className={styles.program_icon_cake}>
+                <Image
+                  src="/cake.jpg"
+                  alt="curch icon"
+                  className={styles.cake_image}
+                  width={100}
+                  height={100}
+                />
+                <p>22:00</p>
+                <p>Esküvői Torta</p>
+              </div>
+              <div className={styles.program_icon_plate}>
+                <Image
+                  src="/plate.jpg"
+                  alt="curch icon"
+                  className={styles.plate_image}
+                  width={100}
+                  height={100}
+                />
+                <p>0:00</p>
+                <p>Éjféli falatozás</p>
+              </div>
+              <Image
+                src="/footsteps.png"
+                alt="Program schedule"
+                width={250}
+                height={500}
+                className={styles.footsteps_image}
+              />
+              <div className={styles.program_icon_glasses}>
+                <Image
+                  src="/glasses.jpg"
+                  alt="curch icon"
+                  className={styles.glasses_image}
+                  width={100}
+                  height={100}
+                />
+                <p>16:00</p>
+                <p>Vendégfogadás</p>
+              </div>
+              <div className={styles.program_icon_camera}>
+                <Image
+                  src="/camera.jpg"
+                  alt="curch icon"
+                  className={styles.camera_image}
+                  width={100}
+                  height={100}
+                />
+                <p>18:00</p>
+                <p>Fotózás</p>
+              </div>
+              <div className={styles.program_icon_spoonandfork}>
+                <Image
+                  src="/spoonandfork.jpg"
+                  alt="curch icon"
+                  className={styles.spoonandfork_image}
+                  width={100}
+                  height={100}
+                />
+                <p>15:30</p>
+                <p>Ünnepi vacsora</p>
+              </div>
+            </div>
+            {/* 
+            <div className={styles.program_card}>
+              <p className={styles.program_text}>15:00: Templomi szertartás</p>
+              <p className={styles.program_text}>16:00: Vendégfogadás</p>
+              <p className={styles.program_text}>17:30: Polgári ceremónia</p>
+              <p className={styles.program_text}>18:00: Fotózás</p>
+              <p className={styles.program_text}>19:30: Ünnepi vacsora</p>
+              <p className={styles.program_text}>22:00: Esküvői torta</p>
+              <p className={styles.program_text}>00:00: Éjféli falatozás</p>
+            </div> */}
+          </div>
         </div>
       </section>
       <section id="gallery" className={styles.gallery_section}>
@@ -60,7 +151,11 @@ export default function Home() {
               <p className={styles.section_description}>
                 Tekintsd meg közös pillanatainkat és emlékeinket
               </p>
-              <Link href="/gallery" className={styles.gallery_button}>
+              <Link
+                href="https://sonder83.pixieset.com/lizaandgergo/"
+                target="_blank"
+                className={styles.gallery_button}
+              >
                 Galéria megtekintése
               </Link>
             </div>
