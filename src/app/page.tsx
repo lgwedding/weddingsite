@@ -37,34 +37,50 @@ export default function Home() {
           <h2 className={styles.section_title}>Program</h2>
           <div className={styles.program_inner_container}>
             <div className={styles.program}>
-              <Image
-                src="/church.jpg"
-                alt="curch icon"
-                className={styles.church_image}
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/rings.jpg"
-                alt="curch icon"
-                className={styles.rings_image}
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/cake.jpg"
-                alt="curch icon"
-                className={styles.cake_image}
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/plate.jpg"
-                alt="curch icon"
-                className={styles.plate_image}
-                width={100}
-                height={100}
-              />
+              <div className={styles.program_icon_church}>
+                <Image
+                  src="/church.jpg"
+                  alt="curch icon"
+                  className={styles.church_image}
+                  width={100}
+                  height={100}
+                />
+                <p>15:00</p>
+                <p>Templomi szertartás</p>
+              </div>
+              <div className={styles.program_icon_rings}>
+                <Image
+                  src="/rings.jpg"
+                  alt="curch icon"
+                  className={styles.rings_image}
+                  width={100}
+                  height={100}
+                />
+                <p>17:30</p>
+                <p>Polgári ceremónia</p>
+              </div>
+              <div className={styles.program_icon_cake}>
+                <Image
+                  src="/cake.jpg"
+                  alt="curch icon"
+                  className={styles.cake_image}
+                  width={100}
+                  height={100}
+                />
+                <p>22:00</p>
+                <p>Esküvői Torta</p>
+              </div>
+              <div className={styles.program_icon_plate}>
+                <Image
+                  src="/plate.jpg"
+                  alt="curch icon"
+                  className={styles.plate_image}
+                  width={100}
+                  height={100}
+                />
+                <p>0:00</p>
+                <p>Éjféli falatozás</p>
+              </div>
               <Image
                 src="/footsteps.png"
                 alt="Program schedule"
@@ -72,27 +88,39 @@ export default function Home() {
                 height={500}
                 className={styles.footsteps_image}
               />
-              <Image
-                src="/glasses.jpg"
-                alt="curch icon"
-                className={styles.glasses_image}
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/camera.jpg"
-                alt="curch icon"
-                className={styles.camera_image}
-                width={100}
-                height={100}
-              />
-              <Image
-                src="/spoonandfork.jpg"
-                alt="curch icon"
-                className={styles.spoonandfork_image}
-                width={100}
-                height={100}
-              />
+              <div className={styles.program_icon_glasses}>
+                <Image
+                  src="/glasses.jpg"
+                  alt="curch icon"
+                  className={styles.glasses_image}
+                  width={100}
+                  height={100}
+                />
+                <p>16:00</p>
+                <p>Vendégfogadás</p>
+              </div>
+              <div className={styles.program_icon_camera}>
+                <Image
+                  src="/camera.jpg"
+                  alt="curch icon"
+                  className={styles.camera_image}
+                  width={100}
+                  height={100}
+                />
+                <p>18:00</p>
+                <p>Fotózás</p>
+              </div>
+              <div className={styles.program_icon_spoonandfork}>
+                <Image
+                  src="/spoonandfork.jpg"
+                  alt="curch icon"
+                  className={styles.spoonandfork_image}
+                  width={100}
+                  height={100}
+                />
+                <p>15:30</p>
+                <p>Ünnepi vacsora</p>
+              </div>
             </div>
             {/* 
             <div className={styles.program_card}>
