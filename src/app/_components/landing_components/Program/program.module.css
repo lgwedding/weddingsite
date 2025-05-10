@@ -103,8 +103,8 @@
 
 .program_icon_spoonandfork {
   position: absolute;
-  bottom: 5rem;
-  right: 2rem;
+  bottom: 6rem;
+  left: -1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,9 +118,10 @@
 }
 
 .program_icon_cake {
+  
   position: absolute;
-  bottom: 6rem;
-  left: -1rem;
+  bottom: 5rem;
+  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
