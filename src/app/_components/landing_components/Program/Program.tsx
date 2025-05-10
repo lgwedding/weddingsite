@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./program.module.css";
-import { Menu, MenuItem, Paper, Typography } from "@mui/material";
+import { Menu, Typography } from "@mui/material";
 
 const Program = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -74,7 +74,7 @@ const Program = () => {
               width={100}
               height={100}
             />
-            <p>17:30</p>
+            <p>17:00</p>
             <p>Polgári ceremónia</p>
           </div>
           <Menu
@@ -95,7 +95,7 @@ const Program = () => {
               <Typography variant="h6" gutterBottom>
                 Polgári ceremónia részletek
               </Typography>
-              <Typography variant="body2">Időpont: 17:30</Typography>
+              <Typography variant="body2">Időpont: 17:00</Typography>
               <Typography variant="body2">
                 Helyszín: Boróka Tábor kertje
               </Typography>
