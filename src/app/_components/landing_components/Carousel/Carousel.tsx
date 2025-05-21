@@ -14,6 +14,18 @@ const images = [
         alt: 'Boróka Tábor belső tér'
     },
     {
+        src: '/szoba.jpg',
+        alt: 'Boróka Tábor belső tér'
+    },
+    {
+        src: '/mosdo.jpg',
+        alt: 'Boróka Tábor belső tér'
+    },
+    {
+        src: '/furdo.jpg',
+        alt: 'Boróka Tábor belső tér'
+    },
+    {
         src: '/IMG_2253.jpg',
         alt: 'Boróka Tábor környezet'
     },
@@ -53,7 +65,7 @@ export default function Carousel() {
     return (
         <div className={styles.carousel}>
             <button onClick={prevSlide} className={`${styles.arrow} ${styles.left}`}>
-                &#8592;
+                {'<'}
             </button>
             <div className={styles.imageWrapper}>
                 <Image
@@ -65,7 +77,7 @@ export default function Carousel() {
                 />
             </div>
             <button onClick={nextSlide} className={`${styles.arrow} ${styles.right}`}>
-                &#8594;
+                {'>'}
             </button>
             <div className={styles.dots}>
                 {images.map((_, index) => (

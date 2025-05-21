@@ -1,0 +1,70 @@
+.accommodation_info {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2rem;
+    width: 95%;
+    max-width: 1200px;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
+
+.accommodation_info h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.accommodation_info h4 {
+    color: #555;
+    margin: 1rem 0;
+}
+
+.info_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main_info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.accommodation_details ul,
+.location_info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.accommodation_details li,
+.location_info li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.accommodation_details li:before,
+.location_info li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .info_content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main_info {
+        flex: 1 1 100%;
+    }
+
+    .accommodation_details,
+    .location_info {
+        flex: 1 1 45%;
+    }
+}
