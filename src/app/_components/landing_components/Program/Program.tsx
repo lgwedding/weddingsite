@@ -20,6 +20,7 @@ const Program = () => {
   return (
     <div className={styles.program_container}>
       <h2 className={styles.section_title}>Program</h2>
+      <p>(kattints az ikonokra)</p>
       <div className={styles.program_inner_container}>
         <div className={styles.program}>
           <div
@@ -53,13 +54,11 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Templomi szertartás részletek
+                Templomi szertartás
               </Typography>
-              <Typography variant="body2">Időpont: 15:00</Typography>
               <Typography variant="body2">
-                Helyszín: Szilvásváradi Református Kerektemplom
+                Esküvőnk első helyszíne a szilvásváradi Református Kerektemplom, ahol 15 órától kezdődik a szertartás. Az egyházi esküvőt követően néhány közös kép készül a templom előtt, majd a vendégek egyidőben elindulnak a Boróka Táborba, Nagyvisnyóra, amely mindössze 8 kilométerre található Szilvásváradtól.
               </Typography>
-              <Typography variant="body2">Időtartam: fél óra</Typography>
             </div>
           </Menu>
           <div
@@ -93,13 +92,11 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Polgári ceremónia részletek
+                Polgári ceremónia
               </Typography>
-              <Typography variant="body2">Időpont: 17:00</Typography>
               <Typography variant="body2">
-                Helyszín: Boróka Tábor kertje
+                A Boróka Tábor lankás, füves területén, a szabad ég alatt (remélhetőleg) 17 órától kezdetét veszi a hivatalos polgári esküvő.
               </Typography>
-              <Typography variant="body2">Időtartam: fél óra</Typography>
             </div>
           </Menu>
           <div
@@ -133,13 +130,11 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Esküvői Torta részletek
+                Esküvői Torta
               </Typography>
-              <Typography variant="body2">Időpont: 22:00</Typography>
-              <Typography variant="body2">Helyszín: Boróka Tábor</Typography>
-              <Typography variant="body2">Időtartam: Kitudja</Typography>
+              <Typography variant="body2">Előreláthatólag 22:00 óra magasságában érkezik a 3 különböző ízesítésben készített esküvői torta. 😊</Typography>
               <Typography variant="body2">
-                Torta ízesítés: pisztácia tuti
+                Torta ízesítés: Hamarosan...
               </Typography>
             </div>
           </Menu>
@@ -174,12 +169,9 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Éjféli falatozás részletek
+                Éjféli falatozás
               </Typography>
-              <Typography variant="body2">Időpont: 0:00</Typography>
-              <Typography variant="body2">Helyszín: Boróka Tábor</Typography>
-              <Typography variant="body2">Időtartam: Valameddig</Typography>
-              <Typography variant="body2">Menü: Töltött káposzta</Typography>
+              <Typography variant="body2">Éjféli falatozás keretében töltött káposztát kínálunk majd vendégeinknek. Előtte, utána és akár közben is, mehet az ünneplés!</Typography>
             </div>
           </Menu>
           <Image
@@ -220,17 +212,10 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Vendégfogadás részletek
-              </Typography>
-              <Typography variant="body2">Időpont: 16:00</Typography>
-              <Typography variant="body2">
-                Helyszín: Boróka Tábor kertje
+                Vendégfogadás
               </Typography>
               <Typography variant="body2">
-                Időtartam: kb. 1 és fél óra
-              </Typography>
-              <Typography variant="body2">
-                Vendégváró falatok hamarosan...
+                A tábor területére megérkezve, szabadtéren, egy kis vendégfogadással várjuk a násznépet, ahol lehet falatozni, beszélgetni, előkészülni a polgári ceremóniára. 
               </Typography>
             </div>
           </Menu>
@@ -266,13 +251,11 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Fotózás részletek
+                Fotózás
               </Typography>
-              <Typography variant="body2">Időpont: 18:00</Typography>
               <Typography variant="body2">
-                Helyszín: Boróka Tábor kertje
+                A boldogító igenek után következhetnek a közös képek a násznéppel, illetve csoportosan, egyénileg. 😊 Az ifjú pár ekkor majd elmegy a fotós-videós csapattal kettesben is megörökíteni házasságuk első néhány percét az aranyóra meghitt fényeiben, ezalatt a vendégeknek különböző játékokkal is lehetőségük lesz elfoglalni magukat.
               </Typography>
-              <Typography variant="body2">Időtartam: kb. 1 óra</Typography>
             </div>
           </Menu>
           <div
@@ -306,12 +289,9 @@ const Program = () => {
           >
             <div style={{ padding: "1rem", maxWidth: 300 }}>
               <Typography variant="h6" gutterBottom>
-                Ünnepi vacsora részletek
+                Ünnepi Vacsora
               </Typography>
-              <Typography variant="body2">Időpont: 19:30</Typography>
-              <Typography variant="body2">Helyszín: Boróka Tábor</Typography>
-              <Typography variant="body2">Időtartam: kb. 1 óra</Typography>
-              <Typography variant="body2">Menü: Hamarosan...</Typography>
+              <Typography variant="body2">A Boróka Tábor rendezvényhelyszínén 19:30-tól kezdődik majd a háromfogásos, hagyományos, ünnepi vacsora. A menüről bővebben majd az asztalokon elhelyezett táblákon olvashatnak a vendégek. A vacsora mellé Dudás Ferenc családi borászatának borkülönlegességei közül válogathatnak, illetve a Szabó család pálinkáiból. Emellett különböző röviditalok, sörök, és üdítők is lesznek az italkínálatban.<br/>A vacsorán kívül természetesen az ünneplésen, szórakozáson és örömteli pillanatokon lesz a hangsúly! 😊</Typography>
             </div>
           </Menu>
         </div>
