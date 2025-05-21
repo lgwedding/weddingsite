@@ -36,6 +36,9 @@ const Footer = () => {
                 <Link href="#questionnaire">Kérdőív</Link>
               </li>
               <li>
+                <Link href="#program">Program</Link>
+              </li>
+              <li>
                 <Link href="#gallery">Galéria</Link>
               </li>
               <li>

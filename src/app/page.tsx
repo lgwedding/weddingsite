@@ -5,6 +5,7 @@ import logo from "../../public/logo.svg";
 import gallery_preview from "../../public/gallery_preview (1).jpg";
 import CountdownTimer from "./_components/landing_components/Countdown/CountdownTimer";
 import Program from "./_components/landing_components/Program/Program";
+import Carousel from "./_components/landing_components/Carousel/Carousel";
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -67,6 +68,7 @@ export default function Home() {
         <h2 style={{ marginTop: "2rem" }} className={styles.section_title}>
           Helyszín
         </h2>
+        <Carousel />
         <iframe
           loading="lazy"
           className={styles.map}
