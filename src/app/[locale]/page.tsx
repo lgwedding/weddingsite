@@ -1,36 +1,35 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Link from 'next/link';
-import logo from '../../public/logo.svg';
-import gallery_preview from '../../public/gallery_preview (1).jpg';
-import CountdownTimer from './_components/landing_components/Countdown/CountdownTimer';
-import Program from './_components/landing_components/Program/Program';
-import Carousel from './_components/landing_components/Carousel/Carousel';
-import AccommodationInfo from './_components/landing_components/Accomodation/AccomodationInfo';
-export default function Home() {
+import logo from '../../../public/logo.svg';
+import gallery_preview from '../../../public/gallery_preview (1).jpg';
+import CountdownTimer from '../_components/landing_components/Countdown/CountdownTimer';
+import Program from '../_components/landing_components/Program/Program';
+import Carousel from '../_components/landing_components/Carousel/Carousel';
+import AccommodationInfo from '../_components/landing_components/Accomodation/AccomodationInfo';
+import { getTranslations } from 'next-intl/server';
+export default async function Home() {
+  const t = await getTranslations('home');
   return (
     <main className={styles.main}>
       <div className={styles.intro_section}>
         <div className={styles.banner_image}></div>
         <div className={styles.welcome}>
           <Image src={logo} alt='logo' width={350} />
-          <h1>Köszöntünk esküvőnk weboldalán!</h1>
+          <h1>{t('hero.title')}</h1>
         </div>
       </div>
       <CountdownTimer />
       <section id='questionnaire' className={styles.questionnaire_section}>
         <div className={styles.questionnaire_container}>
-          <h2 className={styles.section_title}>Kérdőív</h2>
-          <p className={styles.section_description}>
-            Szeretnénk, ha részesei lennétek ennek a különleges napnak. Kérjük, töltsétek ki kérdőívünket, hogy minden
-            tökéletes legyen!
-          </p>
+          <h2 className={styles.section_title}>{t('questionnaire.title')}</h2>
+          <p className={styles.section_description}>{t('questionnaire.subtitle')}</p>
           <a
             href='https://forms.gle/FLMQjhdFXxcngAer6'
             target='_blank'
             rel='noopener noreferrer'
             className={styles.questionnaire_button}>
-            Kérdőív kitöltése
+            {t('questionnaire.btn')}
           </a>
         </div>
       </section>

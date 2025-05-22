@@ -1,18 +1,20 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import styles from "./countdown.module.css";
+import React, { useState, useEffect } from 'react';
+import styles from './countdown.module.css';
+import { useTranslations } from 'next-intl';
 
 const CountdownTimer = () => {
+  const t = useTranslations('home.duedate');
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
+    seconds: 0
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2025-08-30T15:00:00+02:00"); // Hungarian time (UTC+1)
+    const weddingDate = new Date('2025-08-30T15:00:00+02:00'); // Hungarian time (UTC+1)
 
     const calculateTimeLeft = () => {
       const now = new Date();
@@ -23,7 +25,7 @@ const CountdownTimer = () => {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
+          seconds: Math.floor((difference / 1000) % 60)
         });
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -42,23 +44,23 @@ const CountdownTimer = () => {
 
   return (
     <div className={styles.countdown_wrapper}>
-      <h2>Esküvőnkig hátralevő idő</h2>
+      <h2>{t('title')}</h2>
       <div className={styles.countdown}>
         <div className={styles.countdown_item}>
           <span className={styles.number}>{timeLeft.days}</span>
-          <span className={styles.label}>Nap</span>
+          <span className={styles.label}>{t('day')}</span>
         </div>
         <div className={styles.countdown_item}>
           <span className={styles.number}>{timeLeft.hours}</span>
-          <span className={styles.label}>Óra</span>
+          <span className={styles.label}>{t('hour')}</span>
         </div>
         <div className={styles.countdown_item}>
           <span className={styles.number}>{timeLeft.minutes}</span>
-          <span className={styles.label}>Perc</span>
+          <span className={styles.label}>{t('minute')}</span>
         </div>
         <div className={styles.countdown_item}>
           <span className={styles.number}>{timeLeft.seconds}</span>
-          <span className={styles.label}>Másodperc</span>
+          <span className={styles.label}>{t('second')}</span>
         </div>
       </div>
     </div>

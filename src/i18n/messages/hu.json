@@ -1,0 +1,31 @@
+{
+  "common": {
+    "menu": {
+      "questionnaire": "Kérdőív",
+      "program": "Program",
+      "gallery": "Galéria",
+      "location": "Helyszín"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Köszöntünk esküvőnk weboldalán!"
+    },
+    "duedate": {
+      "title": "Esküvőnkig hátralévő idő",
+      "day": "Nap",
+      "hour": "Óra",
+      "minute": "Perc",
+      "second": "Másodperc"
+    },
+    "questionnaire": {
+      "title": "Kérdőív",
+      "subtitle": "Szeretnénk, ha részesei lennétek ennek a különleges napnak. Kérjük, töltsétek ki kérdőívünket, hogy minden tökéletes legyen!",
+      "btn": "Kérdőív kitöltése"
+    },
+    "program": {
+      "title": "Program",
+      "subtitle": "(kattints az ikonokra)"
+    }
+  }
+}
