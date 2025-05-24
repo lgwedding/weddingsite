@@ -4,10 +4,12 @@ import React, { useState } from 'react';
 import styles from './program.module.css';
 import { Menu, Typography } from '@mui/material';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 
 const Program = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [activeMenu, setActiveMenu] = useState('');
+  const { locale: currentLocale } = useParams();
   const t = useTranslations('home.program');
   const handleClick = (event: any, menuId: string) => {
     setAnchorEl(event.currentTarget);
@@ -30,7 +32,7 @@ const Program = () => {
             style={{ cursor: 'pointer' }}>
             <Image src='/church.jpg' alt='curch icon' className={styles.church_image} width={100} height={100} />
             <p>15:00</p>
-            <p>Templomi szertartás</p>
+            <p>{t('temple')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -47,13 +49,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Templomi szertartás
+                {t('temple')}
               </Typography>
-              <Typography variant='body2'>
-                Esküvőnk első helyszíne a szilvásváradi Református Kerektemplom, ahol 15 órától kezdődik a szertartás.
-                Az egyházi esküvőt követően néhány közös kép készül a templom előtt, majd a vendégek egyidőben
-                elindulnak a Boróka Táborba, Nagyvisnyóra, amely mindössze 8 kilométerre található Szilvásváradtól.
-              </Typography>
+              <Typography variant='body2'>{t('temple_desc')}</Typography>
             </div>
           </Menu>
           <div
@@ -62,7 +60,7 @@ const Program = () => {
             style={{ cursor: 'pointer' }}>
             <Image src='/rings.jpg' alt='rings icon' className={styles.rings_image} width={100} height={100} />
             <p>17:00</p>
-            <p>Polgári ceremónia</p>
+            <p>{t('ceremony')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -79,12 +77,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Polgári ceremónia
+                {t('ceremony')}
               </Typography>
-              <Typography variant='body2'>
-                A Boróka Tábor lankás, füves területén, a szabad ég alatt (remélhetőleg) 17 órától kezdetét veszi a
-                hivatalos polgári esküvő.
-              </Typography>
+              <Typography variant='body2'>{t('ceremony_desc')}</Typography>
             </div>
           </Menu>
           <div
@@ -93,7 +88,7 @@ const Program = () => {
             style={{ cursor: 'pointer' }}>
             <Image src='/cake.jpg' alt='cake icon' className={styles.cake_image} width={100} height={100} />
             <p>22:00</p>
-            <p>Esküvői Torta</p>
+            <p>{t('cake')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -110,21 +105,18 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Esküvői Torta
+                {t('cake')}
               </Typography>
-              <Typography variant='body2'>
-                Előreláthatólag 22:00 óra magasságában érkezik a 3 különböző ízesítésben készített esküvői torta. 😊
-              </Typography>
-              <Typography variant='body2'>Torta ízesítés: Hamarosan...</Typography>
+              <Typography variant='body2'>{t('cake_desc')}</Typography>
             </div>
           </Menu>
           <div
             className={styles.program_icon_plate}
             onClick={(e) => handleClick(e, 'plate')}
-            style={{ cursor: 'pointer' }}>
+            style={{ cursor: 'pointer', left: currentLocale === 'ro' ? '2rem' : '4rem' }}>
             <Image src='/plate.jpg' alt='plate icon' className={styles.plate_image} width={100} height={100} />
             <p>0:00</p>
-            <p>Éjféli falatozás</p>
+            <p>{t('midnight')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -141,12 +133,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Éjféli falatozás
+                {t('midnight')}
               </Typography>
-              <Typography variant='body2'>
-                Éjféli falatozás keretében töltött káposztát kínálunk majd vendégeinknek. Előtte, utána és akár közben
-                is, mehet az ünneplés!
-              </Typography>
+              <Typography variant='body2'>{t('midnight_desc')}</Typography>
             </div>
           </Menu>
           <Image
@@ -162,7 +151,7 @@ const Program = () => {
             style={{ cursor: 'pointer' }}>
             <Image src='/glasses.jpg' alt='glasses icon' className={styles.glasses_image} width={100} height={100} />
             <p>16:00</p>
-            <p>Vendégfogadás</p>
+            <p>{t('reception')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -179,12 +168,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Vendégfogadás
+                {t('reception')}
               </Typography>
-              <Typography variant='body2'>
-                A tábor területére megérkezve, szabadtéren, egy kis vendégfogadással várjuk a násznépet, ahol lehet
-                falatozni, beszélgetni, előkészülni a polgári ceremóniára.
-              </Typography>
+              <Typography variant='body2'>{t('reception_desc')}</Typography>
             </div>
           </Menu>
           <div
@@ -193,7 +179,7 @@ const Program = () => {
             style={{ cursor: 'pointer' }}>
             <Image src='/camera.jpg' alt='camera icon' className={styles.camera_image} width={100} height={100} />
             <p>18:00</p>
-            <p>Fotózás</p>
+            <p>{t('photo')}</p>
           </div>
 
           <Menu
@@ -211,14 +197,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Fotózás
+                {t('photo')}
               </Typography>
-              <Typography variant='body2'>
-                A boldogító igenek után következhetnek a közös képek a násznéppel, illetve csoportosan, egyénileg. 😊 Az
-                ifjú pár ekkor majd elmegy a fotós-videós csapattal kettesben is megörökíteni házasságuk első néhány
-                percét az aranyóra meghitt fényeiben, ezalatt a vendégeknek különböző játékokkal is lehetőségük lesz
-                elfoglalni magukat.
-              </Typography>
+              <Typography variant='body2'>{t('photo_desc')}</Typography>
             </div>
           </Menu>
           <div
@@ -233,7 +214,7 @@ const Program = () => {
               height={100}
             />
             <p>19:30</p>
-            <p>Ünnepi vacsora</p>
+            <p>{t('dinner')}</p>
           </div>
           <Menu
             anchorEl={anchorEl}
@@ -250,16 +231,9 @@ const Program = () => {
             }}>
             <div style={{ padding: '1rem', maxWidth: 300 }}>
               <Typography variant='h6' gutterBottom>
-                Ünnepi Vacsora
+                {t('dinner')}
               </Typography>
-              <Typography variant='body2'>
-                A Boróka Tábor rendezvényhelyszínén 19:30-tól kezdődik majd a háromfogásos, hagyományos, ünnepi vacsora.
-                A menüről bővebben majd az asztalokon elhelyezett táblákon olvashatnak a vendégek. A vacsora mellé Dudás
-                Ferenc családi borászatának borkülönlegességei közül válogathatnak, illetve a Szabó család pálinkáiból.
-                Emellett különböző röviditalok, sörök, és üdítők is lesznek az italkínálatban.
-                <br />A vacsorán kívül természetesen az ünneplésen, szórakozáson és örömteli pillanatokon lesz a
-                hangsúly! 😊
-              </Typography>
+              <Typography variant='body2'>{t('dinner_desc')}</Typography>
             </div>
           </Menu>
         </div>
