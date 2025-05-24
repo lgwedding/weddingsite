@@ -1,11 +1,13 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./footer.module.css";
-import logo from "../../../../../public/logo.svg";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './footer.module.css';
+import logo from '../../../../../public/logo.svg';
+import { useTranslations } from 'next-intl';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('common');
 
   return (
     <footer className={styles.footer}>
@@ -13,54 +15,57 @@ const Footer = () => {
         <div className={styles.footer_content}>
           {/* Logo and Description Section */}
           <div className={styles.footer_brand}>
-            <Link href="/" className={styles.logo}>
+            <Link href='/' className={styles.logo}>
               <Image
                 src={logo} // Make sure to add your logo
-                alt="Logo"
+                alt='Logo'
                 width={120}
                 height={120}
                 priority
               />
             </Link>
-            <p className={styles.brand_description}>
-              Fedezd fel velünk a legszebb pillanatokat és oszd meg emlékeidet
-              másokkal.
-            </p>
+            <p className={styles.brand_description}>{t('footer.welcome')}</p>
           </div>
 
           {/* Navigation Links */}
           <div className={styles.footer_nav}>
-            <h3>Navigáció</h3>
+            <h3>{t('footer.navigation')}</h3>
             <ul>
               <li>
-                <Link href="#questionnaire">Kérdőív</Link>
+                <Link href='#questionnaire'>{t('menu.questionnaire')}</Link>
               </li>
               <li>
-                <Link href="#program">Program</Link>
+                <Link href='#program'>{t('menu.program')}</Link>
               </li>
               <li>
-                <Link href="#gallery">Galéria</Link>
+                <Link href='#gallery'>{t('menu.gallery')}</Link>
               </li>
               <li>
-                <Link href="#location">Helyszín</Link>
+                <Link href='#location'>{t('menu.location')}</Link>
               </li>
             </ul>
           </div>
 
           {/* Contact Information */}
           <div className={styles.footer_contact}>
-            <h3>Kapcsolat</h3>
+            <h3>{t('footer.contact')}</h3>
             <ul>
               <li>
-                <a href="mailto:lgpap97@gmail.com">
+                <a href='mailto:lgpap97@gmail.com'>
                   <span className={styles.icon}>✉️</span>
                   lgpap97@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+36123456789">
+                <a href='tel:+36123456789'>
                   <span className={styles.icon}>📞</span>
-                  +36 30 198 5201
+                  Gergő +36 30 198 5201
+                </a>
+              </li>
+              <li>
+                <a href='tel:+36707187287'>
+                  <span className={styles.icon}>📞</span>
+                  Liza +36 70 718 7287
                 </a>
               </li>
               <li>
@@ -99,7 +104,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className={styles.footer_bottom}>
           <p className={styles.copyright}>
-            © {currentYear} Liza és Gergő esküvője. Minden jog fenntartva.
+            © {currentYear} {t('footer.copy')}
           </p>
           {/* <div className={styles.legal_links}>
             <Link href="/privacy">Adatvédelem</Link>

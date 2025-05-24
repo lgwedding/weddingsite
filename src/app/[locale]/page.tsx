@@ -8,7 +8,10 @@ import Program from '../_components/landing_components/Program/Program';
 import Carousel from '../_components/landing_components/Carousel/Carousel';
 import AccommodationInfo from '../_components/landing_components/Accomodation/AccomodationInfo';
 import { getTranslations } from 'next-intl/server';
-export default async function Home() {
+import { Params } from '@/types/params';
+export default async function Home({ params }: { params: Params }) {
+  // Fetch translations for the 'home' namespace
+  const { locale } = await params;
   const t = await getTranslations('home');
   return (
     <main className={styles.main}>
@@ -38,7 +41,7 @@ export default async function Home() {
       </section>
       <section id='gallery' className={styles.gallery_section}>
         <div className={styles.gallery_container}>
-          <h2 className={styles.section_title}>Galéria</h2>
+          <h2 className={styles.section_title}>t{t('gallery.title')}</h2>
           <div className={styles.gallery_preview}>
             <Image
               src={gallery_preview}
@@ -49,12 +52,12 @@ export default async function Home() {
               priority
             />
             <div className={styles.gallery_overlay}>
-              <p className={styles.section_description}>Tekintsd meg közös pillanatainkat és emlékeinket</p>
+              <p className={styles.section_description}>{t('gallery.subtitle')}</p>
               <Link
                 href='https://sonder83.pixieset.com/lizaandgergo/'
                 target='_blank'
                 className={styles.gallery_button}>
-                Galéria megtekintése
+                {t('gallery.btn')}
               </Link>
             </div>
           </div>
@@ -62,25 +65,25 @@ export default async function Home() {
       </section>
       <div className={styles.mapswrapper} id='location'>
         <h2 style={{ marginTop: '2rem' }} className={styles.section_title}>
-          Helyszín
+          {t('location.title')}
         </h2>
         <div className={styles.accommodation_section}>
           <Carousel />
-          <div className={styles.accommodation_info}>
+          <div className={styles.accommodation_info} style={{ lineHeight: locale === 'ro' ? '1.1rem' : '1.3rem' }}>
             <div className={styles.main_info}>
-              <h4>A szállásról:</h4>
+              <h4>{t('location.accomodation_title')}:</h4>
               <ul>
-                <li>A tábor 2 hektár területen fekszik</li>
-                <li>120 fő elszállásolására van lehetőség egyidejűleg</li>
-                <li>10 faház található a táborban, házanként 3 szobával</li>
-                <li>4 ágyas szobákban történik az elhelyezés</li>
-                <li>Páronként, családonként 1 szoba biztosított</li>
+                <li>{t('location.accomodation_desc1')}</li>
+                <li>{t('location.accomodation_desc2')}</li>
+                <li>{t('location.accomodation_desc3')}</li>
+                <li>{t('location.accomodation_desc4')}</li>
+                <li>{t('location.accomodation_desc5')}</li>
               </ul>
-              <h4>Szobák felszereltsége:</h4>
+              <h4>{t('location.room_title')}:</h4>
               <ul>
-                <li>Ágy, Ágybetét, Takaró, Párna, Ágyhuzat</li>
-                <li>Szekrény, Szék, Asztal</li>
-                <li>Faházanként közös wc., mosdó</li>
+                <li>{t('location.room_desc1')}</li>
+                <li>{t('location.room_desc2')}</li>
+                <li>{t('location.room_desc3')}</li>
               </ul>
             </div>
           </div>

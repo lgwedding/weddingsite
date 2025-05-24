@@ -5,6 +5,12 @@
       "program": "Program",
       "gallery": "Galerie",
       "location": "Locație"
+    },
+    "footer": {
+      "navigation": "Navigație",
+      "contact": "Contact",
+      "welcome": "Te așteptăm cu drag să sărbătorești alături de noi această zi atât de specială pentru noi!",
+      "copy": "Nunta Lizei și a lui Gergő. Toate drepturile rezervate."
     }
   },
   "home": {
@@ -25,7 +31,45 @@
     },
     "program": {
       "title": "Program",
-      "subtitle": "(click pe pictograme)"
+      "subtitle": "(click pe pictograme)",
+      "temple": "Ceremonie Religioasă",
+      "temple_desc": "Primul loc al nunții noastre este Biserica Reformată Rotundă din Szilvásvárad, unde ceremonia începe la ora 15:00. După cununia religioasă, vom face câteva fotografii în fața bisericii, apoi oaspeții se vor îndrepta simultan către Tabăra Boróka din Nagyvisnyó, care se află la doar 8 kilometri de Szilvásvárad.",
+      "reception": "Primirea Oaspeților",
+      "reception_desc": "După sosirea în tabără, îi așteptăm pe invitați în aer liber cu o mică gustare, unde pot servi ceva, discuta și pregăti pentru ceremonia civilă.",
+      "ceremony": "Ceremonie Civilă",
+      "ceremony_desc": "Pe terenul înclinat și verde al Taberei Boróka, sub cerul liber (sperăm), ceremonia civilă oficială va începe la ora 17:00.",
+      "photo": "Fotografii",
+      "photo_desc": "După spusele fericitului „da”, urmează fotografiile cu invitații – în grup, individual sau cum preferă fiecare. 😊 Cu această ocazie, mirii vor merge și singuri cu echipa de fotografi și videografi să imortalizeze primele momente ale căsniciei lor în lumina caldă a orei de aur, în timp ce invitații se pot distra cu diverse jocuri.",
+      "dinner": "Cina Festivă",
+      "dinner_desc": "Cina festivă cu trei feluri va începe la ora 19:30 în zona de evenimente a Taberei Boróka. Detalii despre meniu vor fi afișate pe tăblițele de pe mese. Alături de cină, invitații pot alege dintre vinurile speciale ale cramei de familie Dudás Ferenc sau pălinca familiei Szabó. Vor fi disponibile și alte băuturi spirtoase, bere și răcoritoare. Desigur, pe lângă cină, accentul va fi pus pe sărbătorire, distracție și momente de bucurie! 😊",
+      "cake": "Tortul de Nuntă",
+      "cake_desc": "Se preconizează că tortul de nuntă, pregătit în trei sortimente diferite, va sosi în jurul orei 22:00. 😊",
+      "midnight": "Gustare de la Miezul Nopții",
+      "midnight_desc": "La miezul nopții vom servi sarmale invitaților noștri. Înainte, după și chiar în timpul mesei, distracția poate continua!"
+    },
+    "gallery": {
+      "title": "Galerie",
+      "subtitle": "Descoperă momentele și amintirile noastre împreună",
+      "btn": "Vezi galeria"
+    },
+    "location": {
+      "title": "Locație",
+      "accomodation_title": "Despre cazare",
+      "accomodation_desc1": "Tabăra se întinde pe o suprafață de 2 hectare",
+      "accomodation_desc2": "Capacitatea de cazare este de 120 de persoane simultan",
+      "accomodation_desc3": "În tabără se află 10 căsuțe din lemn, fiecare cu 3 camere",
+      "accomodation_desc4": "Cazarea se face în camere cu 4 paturi",
+      "accomodation_desc5": "Asigurăm o cameră pentru fiecare cuplu sau familie",
+      "room_title": "Dotările camerelor",
+      "room_desc1": "Pat, Saltea, Pilotă, Pernă, Lenjerie de pat",
+      "room_desc2": "Dulap, Scaun, Masă",
+      "room_desc3": "Toaletă și chiuvetă comună pentru fiecare căsuță",
+      "accomodation_info_title": "Informații despre cazare",
+      "accomodation_info_desc": "Putem oferi cazare oaspeților noștri în Tabăra Boróka pentru seara de sâmbătă (30.08). Cei care doresc cazare sunt rugați să menționeze acest lucru în chestionar și, de asemenea, să ne anunțe direct (fie pe Gergő, fie pe Liza). Este important ca oaspeții cazați să sosească între orele 13:00–14:00 pentru a-și ocupa camerele și a se pregăti. De aici vor pleca spre biserica din Szilvásvárad, unde ceremonia religioasă va începe la ora 15:00. Szilvásvárad se află la doar 8 kilometri de Nagyvisnyó, deci deplasarea între cele două localități este ușoară. 😊",
+      "location": "Despre locație",
+      "location_desc": "Nagyvisnyó se află în Parcul Național Bükk, în partea cea mai nordică a județului Heves, în zona pitorească numită Nagyvölgy. Satul este străbătut de două pârâuri – Szilvás și Nagyvölgy – care se varsă în pârâul Bánvölgy, alimentând apoi lacul de acumulare Lázbérc. Pe teritoriul administrativ al satului se află și stațiunea de schi Bánkút. Vegetația este formată din păduri diverse, în special de stejar și fag. Fauna este compusă din vânat mare și mic, reptile, specii de păsări și insecte.",
+      "sights": "Obiective turistice din zonă",
+      "sights_desc": "Szilvásvárad, Valea Szalajka, Ruinele cetății Dédes, Lacul de acumulare Lázbérc, Lillafüred, Eger"
     }
   }
 }

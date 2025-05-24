@@ -5,6 +5,12 @@
       "program": "Program",
       "gallery": "Galéria",
       "location": "Helyszín"
+    },
+    "footer": {
+      "navigation": "Navigáció",
+      "contact": "Kapcsolat",
+      "welcome": "Várunk téged is, hogy együtt ünnepelhessünk ezen a számunkra oly fontos napon!",
+      "copy": "Liza és Gergő esküvője. Minden jog fenntartva."
     }
   },
   "home": {
@@ -25,7 +31,45 @@
     },
     "program": {
       "title": "Program",
-      "subtitle": "(kattints az ikonokra)"
+      "subtitle": "(kattints az ikonokra)",
+      "temple": "Templomi Szertartás",
+      "temple_desc": "Esküvőnk első helyszíne a szilvásváradi Református Kerektemplom, ahol 15 órától kezdődik a szertartás. Az egyházi esküvőt követően néhány közös kép készül a templom előtt, majd a vendégek egyidőben elindulnak a Boróka Táborba, Nagyvisnyóra, amely mindössze 8 kilométerre található Szilvásváradtól.",
+      "reception": "Vendégfogadás",
+      "reception_desc": "A tábor területére megérkezve, szabadtéren, egy kis vendégfogadással várjuk a násznépet, ahol lehet falatozni, beszélgetni, előkészülni a polgári ceremóniára.",
+      "ceremony": "Polgári Ceremónia",
+      "ceremony_desc": "A Boróka Tábor lankás, füves területén, a szabad ég alatt (remélhetőleg) 17 órától kezdetét veszi a hivatalos polgári esküvő.",
+      "photo": "Fotózás",
+      "photo_desc": "A boldogító igenek után következhetnek a közös képek a násznéppel, illetve csoportosan, egyénileg. 😊 Az ifjú pár ekkor majd elmegy a fotós-videós csapattal kettesben is megörökíteni házasságuk első néhány percét az aranyóra meghitt fényeiben, ezalatt a vendégeknek különböző játékokkal is lehetőségük lesz elfoglalni magukat.",
+      "dinner": "Ünnepi Vacsora",
+      "dinner_desc": "A Boróka Tábor rendezvényhelyszínén 19:30-tól kezdődik majd a háromfogásos, hagyományos, ünnepi vacsora. A menüről bővebben majd az asztalokon elhelyezett táblákon olvashatnak a vendégek. A vacsora mellé Dudás Ferenc családi borászatának borkülönlegességei közül válogathatnak, illetve a Szabó család pálinkáiból. Emellett különböző röviditalok, sörök, és üdítők is lesznek az italkínálatban. A vacsorán kívül természetesen az ünneplésen, szórakozáson és örömteli pillanatokon lesz a hangsúly! 😊",
+      "cake": "Esküvői Torta",
+      "cake_desc": "Előreláthatólag 22:00 óra magasságában érkezik a 3 különböző ízesítésben készített esküvői torta. 😊",
+      "midnight": "Éjféli Falatozás",
+      "midnight_desc": "Éjféli falatozás keretében töltött káposztát kínálunk majd vendégeinknek. Előtte, utána és akár közben is, mehet az ünneplés!"
+    },
+    "gallery": {
+      "title": "Galéria",
+      "subtitle": "Tekintsd meg közös pillanatainkat és emlékeinket",
+      "btn": "Galéria megtekintése"
+    },
+    "location": {
+      "title": "Helyszín",
+      "accomodation_title": "A szállásról",
+      "accomodation_desc1": "A tábor 2 hektár területen fekszik",
+      "accomodation_desc2": "120 fő elszállásolására van lehetőség egyidejűleg",
+      "accomodation_desc3": "10 faház található a táborban, házanként 3 szobával",
+      "accomodation_desc4": "4 ágyas szobákban történik az elhelyezés",
+      "accomodation_desc5": "Páronként, családonként 1 szoba biztosított",
+      "room_title": "Szobák felszereltsége",
+      "room_desc1": "Ágy, Ágybetét, Takaró, Párna, Ágyhuzat",
+      "room_desc2": "Szekrény, Szék, Asztal",
+      "room_desc3": "Faházanként közös wc., mosdó",
+      "accomodation_info_title": "Szállással kapcsolatos tudnivalók",
+      "accomodation_info_desc": "A Boróka Táborban tudunk biztosítani szállást vendégeink számára szombat (08.30-a) estére. Aki igényelni szeretné, az kérjük jelezze a kérdőívben is, illetve egyeztessen velünk is (akár Gergőnek, akár Lizának szóljon). Fontos, hogy az itt elszállásolt vendégeink már 13:00-14:00 óra között érkezhetnek, hogy elfoglalják szobáikat, elkészüljenek. Innen indulhatnak a szilvásváradi templomba, ahol 15 órakor kezdődik az egyházi esküvő. Szilvásvárad mindössze 8 kilométerre van Nagyvisnyótól, így egyszerűen el lehet jutni egyik településről a másikra. 😊",
+      "location": "A helyszínről",
+      "location_desc": "Nagyvisnyó a Bükki Nemzeti Park területén fekszik, Heves megye legészakibb részén, melynek legszebb része a Nagyvölgy. A falut két patak szeli át, a Szilvás-patak és a Nagyvölgy-patak, melyek a Bánvölgy-patakba torkollanak és a Lázbérci-víztározó vizét táplálják. Nagyvisnyó közigazgatási területéhez tartozik Bánkút, a ‘síparadicsom‘. Természetes növényzetét sokféle erdő társulás alkotja, tölgyesekkel, bükkösökkel. Állatai nagy- és kisvadak, hüllők, madárfajok, rovarok.",
+      "sights": "Látnivalók a környéken",
+      "sights_desc": "Szilvásvárad, Szalajka-völgy, Dédesi várrom, Lázbérci víztározó, Lillafüred, Eger"
     }
   }
 }

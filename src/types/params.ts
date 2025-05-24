@@ -1,1 +1,1 @@
-export type Params = Promise<{ locale: 'en' | 'hu', slug: string }>;
+export type Params = Promise<{ locale: 'ro' | 'hu', slug: string }>;
