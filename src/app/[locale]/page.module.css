@@ -9,6 +9,32 @@
   width: 100%;
   scroll-behavior: smooth;
 }
+
+@media (prefers-color-scheme: dark) {
+  .body {
+    background-color:  whitesmoke;
+    color: black;
+  }
+  .intro_section {
+    background-color: white;
+  }
+  .questionnaire_container {
+    background-color: white;
+  }
+  .questionnaire_section {
+    background-color: white;
+  }
+  .section_title {
+    color: #333;
+  }
+  .section_description {
+    color: #666;
+  }
+  .accommodation_info {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #666;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
