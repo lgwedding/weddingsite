@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,7 +15,24 @@ const Header = () => {
   const { locale: currentLocale } = useParams();
   const desktop = useMediaQuery('(min-width: 992px)');
   const t = useTranslations('common.menu');
-
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Override matchMedia
+      Object.defineProperty(window, 'matchMedia', {
+        writable: true,
+        value: (query: string) => ({
+          matches: query === '(prefers-color-scheme: light)',
+          media: query,
+          onchange: null,
+          addListener: () => {},
+          removeListener: () => {},
+          addEventListener: () => {},
+          removeEventListener: () => {},
+          dispatchEvent: () => false
+        })
+      });
+    }
+  }, []);
   const languages = [
     { code: 'ro', label: 'Román' },
     { code: 'hu', label: 'Magyar' }
