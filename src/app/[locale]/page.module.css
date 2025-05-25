@@ -91,7 +91,7 @@
   width: 100%;
   text-align: center;
   padding: 2rem;
-  background: white !important;
+  background: white;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -99,14 +99,14 @@
 .section_title {
   font-family: var(--font-great-vibes);
   font-size: 3rem;
-  color: #333 !important;
+  color: #333;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .section_description {
   font-size: 1.2rem;
-  color: #666 !important;
+  color: #666;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 2rem;
