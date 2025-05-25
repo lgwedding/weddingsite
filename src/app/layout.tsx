@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' style={{ width: '100%', height: '100vh' }}>
+      <head>
+        <meta name='color-scheme' content='light' />
+      </head>
       <body className={`${greatVibes.variable} ${geistMono.variable} ${styles.body}`}>{children}</body>
     </html>
   );
