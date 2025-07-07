@@ -182,9 +182,10 @@
 
 @media (max-width: 480px) {
   .footer {
-    background-image: none;
+    /* background-image: none; */
+    background-size: 70px, 70px;
+    background-position: 5% 85%, 95% 85%;
   }
-
   .footer_container {
     padding: 0 1rem;
     padding-bottom: 0.5rem;

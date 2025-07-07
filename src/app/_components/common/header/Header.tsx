@@ -41,9 +41,9 @@ const Header = () => {
   const FlagIcon = ({ locale }: { locale: string }) => {
     switch (locale) {
       case 'ro':
-        return <RO width={24} height={24} />;
-      case 'hu':
         return <HU width={24} height={24} />;
+      case 'hu':
+        return <RO width={24} height={24} />;
       default:
         return null;
     }

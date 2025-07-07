@@ -28,7 +28,7 @@ export default async function Home({ params }: { params: Params }) {
           <h2 className={styles.section_title}>{t('questionnaire.title')}</h2>
           <p className={styles.section_description}>{t('questionnaire.subtitle')}</p>
           <a
-            href='https://forms.gle/FLMQjhdFXxcngAer6'
+            href={locale == 'ro' ? 'https://forms.gle/w9Xigkq2VnH7rtbQ6' : 'https://forms.gle/FLMQjhdFXxcngAer6'}
             target='_blank'
             rel='noopener noreferrer'
             className={styles.questionnaire_button}>
@@ -41,7 +41,7 @@ export default async function Home({ params }: { params: Params }) {
       </section>
       <section id='gallery' className={styles.gallery_section}>
         <div className={styles.gallery_container}>
-          <h2 className={styles.section_title}>t{t('gallery.title')}</h2>
+          <h2 className={styles.section_title}>{t('gallery.title')}</h2>
           <div className={styles.gallery_preview}>
             <Image
               src={gallery_preview}
