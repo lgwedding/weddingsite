@@ -1,7 +1,7 @@
 {
   "common": {
     "menu": {
-      "questionnaire": "Chestionar",
+      "questionnaire": "Distribuie fotografiile tale",
       "program": "Program",
       "gallery": "Galerie",
       "location": "Locație"
@@ -25,9 +25,10 @@
       "second": "Secunde"
     },
     "questionnaire": {
-      "title": "Chestionar",
-      "subtitle": "Ne-ar plăcea să faceți parte din această zi specială. Vă rugăm să completați chestionarul nostru pentru a ne ajuta cu pregătirile!",
-      "btn": "Completează chestionarul"
+      "title": "Distribuie fotografiile tale",
+      "subtitle": "Click pe butoanele de mai jos, și vei fi direcționat către un album Google Foto, unde poți încărca fotografiile care surprind momentele pe care le-ai petrecut la nuntă! 😊",
+      "btn": "Concurs de fotografie de nuntă",
+      "btn2": "Fotografii de la nunta noastră"
     },
     "program": {
       "title": "Program",

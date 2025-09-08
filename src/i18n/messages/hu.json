@@ -1,7 +1,7 @@
 {
   "common": {
     "menu": {
-      "questionnaire": "Kérdőív",
+      "questionnaire": "Oszd meg a képeidet",
       "program": "Program",
       "gallery": "Galéria",
       "location": "Helyszín"
@@ -25,9 +25,10 @@
       "second": "Másodperc"
     },
     "questionnaire": {
-      "title": "Kérdőív",
-      "subtitle": "Szeretnénk, ha részesei lennétek ennek a különleges napnak. Kérjük, töltsétek ki kérdőívünket, hogy ezzel segítsétek a készülődést!",
-      "btn": "Kérdőív kitöltése"
+      "title": "Oszd meg velünk a képeidet",
+      "subtitle": "Az alábbi gombokra kattintva eljutsz egy-egy Google fotók albumba, ahol feltöltheted a közös pillanatokat megörökítő képeidet, illetve megoszthatod a fotós kihívásra készült felvételeidet! 😊",
+      "btn": "Esküvői fotós kihívás",
+      "btn2": "Képek az esküvőnkről"
     },
     "program": {
       "title": "Program",

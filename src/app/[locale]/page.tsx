@@ -28,11 +28,18 @@ export default async function Home({ params }: { params: Params }) {
           <h2 className={styles.section_title}>{t('questionnaire.title')}</h2>
           <p className={styles.section_description}>{t('questionnaire.subtitle')}</p>
           <a
-            href={locale == 'ro' ? 'https://forms.gle/w9Xigkq2VnH7rtbQ6' : 'https://forms.gle/FLMQjhdFXxcngAer6'}
+            href={'https://photos.app.goo.gl/mnUyUxfLRmZrH9fs7'}
             target='_blank'
             rel='noopener noreferrer'
             className={styles.questionnaire_button}>
             {t('questionnaire.btn')}
+          </a>
+          <a
+            href={'https://photos.app.goo.gl/NR3Y1Ujn2jCzZGjy5'}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={styles.questionnaire_button}>
+            {t('questionnaire.btn2')}
           </a>
         </div>
       </section>
