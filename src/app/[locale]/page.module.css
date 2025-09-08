@@ -149,6 +149,9 @@
   border-radius: 50px;
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .questionnaire_button:hover {

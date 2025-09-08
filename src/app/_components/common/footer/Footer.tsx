@@ -32,10 +32,12 @@ const Footer = () => {
             <h3>{t('footer.navigation')}</h3>
             <ul>
               <li>
-                <Link href='#questionnaire'>{t('menu.questionnaire')}</Link>
+                <Link href='#program'>{t('menu.program')}</Link>
               </li>
               <li>
-                <Link href='#program'>{t('menu.program')}</Link>
+                <b>
+                  <Link href='#questionnaire'>{t('menu.questionnaire')}</Link>
+                </b>
               </li>
               <li>
                 <Link href='#gallery'>{t('menu.gallery')}</Link>
