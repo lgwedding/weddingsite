@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Link from 'next/link';
 import logo from '../../../public/logo.svg';
-import gallery_preview from '../../../public/gallery_preview (1).jpg';
+import gallery_preview from '../../../public/gallery_preview_2.jpg';
 import CountdownTimer from '../_components/landing_components/Countdown/CountdownTimer';
 import Program from '../_components/landing_components/Program/Program';
 import Carousel from '../_components/landing_components/Carousel/Carousel';
@@ -61,7 +61,7 @@ export default async function Home({ params }: { params: Params }) {
             <div className={styles.gallery_overlay}>
               <p className={styles.section_description}>{t('gallery.subtitle')}</p>
               <Link
-                href='https://sonder83.pixieset.com/lizaandgergo/'
+                href='https://gallery.rozmaring.wedding/lizagergo/'
                 target='_blank'
                 className={styles.gallery_button}>
                 {t('gallery.btn')}
