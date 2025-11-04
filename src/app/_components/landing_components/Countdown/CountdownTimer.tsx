@@ -45,6 +45,7 @@ const CountdownTimer = () => {
   return (
     <div className={styles.countdown_wrapper}>
       <h2>{t('title')}</h2>
+      <h3>Megtörtént a nagy nap. Köszönjük hogy velünk ünnepeltetek!</h3>
       <div className={styles.countdown}>
         <div className={styles.countdown_item}>
           <span className={styles.number}>{timeLeft.days}</span>

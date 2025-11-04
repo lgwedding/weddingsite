@@ -55,10 +55,10 @@ const Header = () => {
         <Link href={`/`}>
           <Image src={logo} alt='Home page' width={70} />
         </Link>
+        {/* <Link href={`#program`}>{t('program')}</Link> */}
         <Link href={`#questionnaire`}>{t('questionnaire')}</Link>
-        <Link href={`#program`}>{t('program')}</Link>
         <Link href={`#gallery`}>{t('gallery')}</Link>
-        <Link href={`#location`}>{t('location')}</Link>
+        {/* <Link href={`#location`}>{t('location')}</Link> */}
       </nav>
       <Box
         sx={{
